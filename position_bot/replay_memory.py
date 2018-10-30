@@ -24,6 +24,7 @@ class ReplayMemory:
     def __len__(self):
         return(len(self.memory))
     
+
 class PrioritizedMemory:
     """
     https://arxiv.org/pdf/1511.05952.pdf
@@ -69,3 +70,4 @@ class PrioritizedMemory:
         
     def __len__(self):
         return(len(self.memory))
+    

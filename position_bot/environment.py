@@ -45,11 +45,11 @@ class SingleStockMarket:
         next_state = self.get_state()
         #differential sharpe as reward
         #absolute
-        reward = self.get_sharpe() - old_sharpe
-#         #percentage
-#         reward = self.get_sharpe() / old_sharpe - 1 
-#         reward = np.nan_to_num(reward)
-#         reward = np.clip(reward,-1,1)
+#         reward = self.get_sharpe() - old_sharpe
+        #percentage
+        reward = self.get_sharpe() / old_sharpe - 1 
+        reward = np.nan_to_num(reward)
+        reward = np.clip(reward,-1,1)
         done = True if self.idx==self.df.shape[0] else False
         info = f'Currently at index {self.idx}'
         
