@@ -1,5 +1,5 @@
 # RL Trader
-A collection of RL financial applications
+A collection of RL financial applications; part of a talk at [BADS2018](https://docs.google.com/presentation/d/1GkvQx6hhnl5gg2P-6-qAYltPZGfKxBeG5RNYATvn-ck/edit?usp=sharing)
 
 ## Position Bot
 
